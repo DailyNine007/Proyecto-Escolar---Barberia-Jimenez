@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabezera{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    padding: 5px;
+    z-index: 1000; /*Fijar encima de la pagina*/
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
+}
+
+.cabezera{
+    z-index: 10;
+    position: relative;
+}
+    
+.cabezera img{
+    width: 140px;
+    height: 140px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-left: 40px;
+}
+
+.carrusel .swiper-wrapper .swiper-slide {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.carrusel .swiper-wrapper .swiper-slide img {
+    width: 100%; 
+    max-width: none; 
+    height: auto; 
+    max-height: calc(100vh - 100px); 
+    
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: gold; 
+    width: 60px; 
+    height: 60px; 
+}
+
+.swiper-pagination-bullet {
+background-color: gold;
+opacity: 1; 
+}
+
+.swiper-pagination-bullet-active {
+    background-color: darkgoldenrod;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Servicios {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-menu {
+    flex: 1;
+    text-align: left;
+}
+
+.contenedor-menu strong {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu-servicios {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lista-servicios {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-servicios li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.ladoDerecho {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ladoDerecho .swiper {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.ladoDerecho .swiper-slide img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0.9, 0.9, 0.9, 0.9);
+}
+
+/*Barra negra superior con efecto curvado*/
+.barra-negra-superior {
+    background-color: #000;
+    height: 85px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    clip-path: polygon(0 50%, 50% 100%, 100% 50%, 100% 0, 0 0);
+}
+
+/* Barra negra inferior con efecto curvado */
+.barra-negra-inferior {
+    background-color: #000;
+    height: 85px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    clip-path: polygon(0 50%, 50% 0, 100% 50%, 100% 100%, 0 100%);
+}
+
+.logotiposBarber {
+    display: flex; /* Utiliza flexbox para alinear horizontalmente */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente */
+    height: 100px; /* Altura del contenedor */
+    margin: 0 70px; /* Agrega un margen alrededor del contenedor */
+}
+
+.logotiposBarber img {
+    height: 80%; /* Ajusta la altura de las imágenes al 100% del contenedor */
+    max-width: 33%; /* Asegura que cada imagen no ocupe más de un tercio del contenedor */
+    object-fit: contain; /* Mantiene la proporción de las imágenes */
+}
+
+
+
+
+
+
+
+
+
+
+
+.telefono{
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #000; 
+}
+
+.telefono img{
+    width: 100px;
+    height: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/*Adornos dorados antes y después del texto*/
+.telefono strong::before, 
+.telefono strong::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px; 
+    height: 4px;
+    background-color: #d4af37; 
+}
+
+/*Línea antes del título*/
+.telefono strong::before {
+    left: 50px; /*Ajuste horizontal de la línea izquierda */
+}
+
+/*Línea después del título*/
+.telefono strong::after {
+    right: 50px; /*Ajuste horizontal de la línea derecha*/
+}
+
+/*Adornos con puntitos dorados antes y después de las línea*/
+.telefono strong::before, 
+.telefono strong::after {
+    content: '•'; 
+    color: #d4af37; 
+    position: absolute;
+    font-size: 18px; 
+}
+
+.telefono strong::before {
+    left: 15px; /*Ajuste del punto izquierdo*/
+}
+
+.telefono strong::after {
+    right: 15px; /*Ajuste del punto derecho*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion-button {
+    background-color: #000000; 
+    color: #FFD700; 
+    font-weight: bold;
+    border: none;
+    transition: all 0.4s ease; /*Suaviza las transiciones*/
+}
+
+.accordion-button:hover {
+    background-color: #FFD700; /*Fondo dorado cuando se pasa el cursor*/
+    color: #000000; /*Texto negro al pasar el cursor*/
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.5);
+}
+
+.accordion-button:focus {
+    box-shadow: none; /*Elimina el borde azul*/
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #FFD700; /*Fondo dorado cuando está abierto*/
+    color: #000000; /*Texto negro cuando está abierto */
+}
+
+.accordion-item {
+    border: none; 
+}
+
+
+.accordion-button {
+    color: gold; 
+    transition: background-color 0.3s ease, color 0.5s ease; 
+}
+
+.accordion-button:hover {
+    background-color: gold; 
+}
+
+.telefono img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*Transiciones para el efecto de hover*/
+}
+
+.telefono img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.8); /*Añade una sombra dorada cuando se pasa el cursor*/
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilo para el contenedor de los títulos con adornos*/
+.titulo-con-adornos{
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #000; 
+}
+
+/*Adornos dorados antes y después del texto*/
+.titulo-con-adornos strong::before, 
+.titulo-con-adornos strong::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px; 
+    height: 4px;
+    background-color: #d4af37; 
+}
+
+/*Línea antes del título*/
+.titulo-con-adornos strong::before {
+    left: -40px; /* Ajuste horizontal de la línea izquierda */
+}
+
+/*Línea después del título*/
+.titulo-con-adornos strong::after {
+    right: -40px; /*Ajuste horizontal de la línea derecha*/
+}
+
+/*Adornos con puntitos dorados antes y después de las línea*/
+.titulo-con-adornos strong::before, 
+.titulo-con-adornos strong::after {
+    content: '•'; 
+    color: #d4af37; 
+    position: absolute;
+    font-size: 18px; 
+}
+
+.titulo-con-adornos strong::before {
+    left: 15px; /*Ajuste del punto izquierdo*/
+}
+
+.titulo-con-adornos strong::after {
+    right: 15px; /*Ajuste del punto derecho*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reseñas{
+    display: flex;
+    justify-content: space-between; /*Distribuye los elementos de manera simétrica*/
+    align-items: flex-start; /*Alinea los elementos al inicio del contenedor*/
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.ladoIzquierdo, .ladoDerecho{
+    width: 48%; /*Ambas divisiones ocupan aproximadamente el 50% del ancho con un pequeño margen*/
+}
+
+
+/*Estilos para el contenedor de reseñas*/
+.ladoIzquierdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ladoDerecho1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.5);
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Título de la sección*/
+.ladoIzquierdo h2 {
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/*Estilos de la calificación por estrellas*/
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 40px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.selected
+.star.highlight{
+    color: gold;
+}
+
+
+.botonEnviar {
+    background-color: gold;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botonEnviar:hover {
+    background-color: #daa520;
+}
+
+#average-stars-number {
+    font-size: 28px; /* Cambia este valor al tamaño que desees */
+    font-weight: bold; /* Opcional: hace que el texto sea más grueso */
+    color: gold; /* Opcional: cambia el color del texto */
+}
+
+.logosInferiores img {
+    width: 120px; 
+    height: auto; 
+    margin: 0 10px; 
+    display: inline-block; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.piePagina {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+    z-index: 1000; 
+    box-shadow: 0 -4px 20px rgba(255, 215, 0, 0.5); /*Sombra dorada hacia arriba*/
+    color: white; 
+    text-align: center; 
+}
+
+.footer-content {
+    max-width: 1000px; /*Limitar el ancho del contenido*/
+    margin: 0 auto; /*Centrar horizontalmente*/
+}
+
+.piePagina strong {
+    font-size: 24px; /*Tamaño para el título*/
+    color: #FFD700; /*Color dorado para el título*/
+    margin-bottom: 10px; /*Separación del título y el párrafo*/
+}
+
+.piePagina p {
+    font-size: 16px;
+    line-height: 1.6; /*Espaciado entre líneas*/
+    color: #ffffff; /*Blanco para el texto*/
+    margin: 0;
+}
+
+.piePagina p::first-letter {
+    font-size: 20px; /*Agrandar la primera letra*/
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* Asegura que el contenedor ocupe el espacio necesario */
+.swiper.carrusel {
+    width: 100%;
+    height: 100vh; /* Ajusta la altura del carrusel */
+}
+
+/* Asegura que cada slide ocupe el tamaño completo del contenedor */
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo para las imágenes para que cubran toda el área del slide */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el área del slide sin distorsión */
+}
