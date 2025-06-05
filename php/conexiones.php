@@ -1,9 +1,9 @@
 <?php
 // Conectar a la base de datos
-$host = "127.0.0.1";
-$username = "root";
-$password = "Daily@007";
-$dbname = "barberia"; 
+$host = "";
+$username = "";
+$password = "";
+$dbname = ""; 
 
 
 // Crear la conexión
